@@ -1,0 +1,15 @@
+Find Duplicate Number 
+
+class Solution {
+    public int findDuplicate(int[] nums) {
+        
+        boolean b[] = new boolean[nums.length];
+       for(int i : nums)
+       {
+         if(b[i]) return i;
+         b[i] = true;
+       }
+       return -1;
+
+        }
+    }
